@@ -16,7 +16,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
 }
-
+#logo{
+    max-width: 500px;
+    max-height: 50px;
+}
 body {
     line-height: 1.6;
     color: var(--text-dark);
