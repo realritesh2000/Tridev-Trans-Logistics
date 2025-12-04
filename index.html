@@ -208,10 +208,12 @@
         </div>
 
         <form class="contact-form" id="contactForm">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Subject / Shipment ID" required />
+          <input type="text" name="from-name" placeholder="Enter Your Name" required />
+          <input type="email" name="from-email" placeholder="Enter your email Address" required />
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+          <!-- <input type="text" placeholder="Subject / Shipment ID" required /> -->
           <textarea
+            name="message"
             rows="5"
             placeholder="Message or Details"
             required
@@ -231,6 +233,14 @@
       <p>&copy; Tridev Trans Logistics. All Rights Reserved.</p>
     </footer>
 
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
+<script>
+  (function(){
+    emailjs.init("WVjsaZ0WtOo7AZasN"); // Replace with your actual Public Key
+  })();
+</script>
+
   </body>
 </html>
