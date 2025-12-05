@@ -25,11 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM references
   const contactForm = document.getElementById("contactForm");
 
-  // Optional: validate mobile number lightly before sending
+  
   function isValidMobile(m) {
-    // simple check for 10 digits (India) — adjust to suit
-    return /^\d{10}$/.test(m.replace(/\D/g, ''));
-  }
+  // Remove non-digits (spaces, hyphens, etc.)
+  const cleaned = m.replace(/\D/g, '');
+  // Must be exactly 10 digits and start with 6–9 (India rule)
+  return /^[6-9]\d{9}$/.test(cleaned);
+}
+
 
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
