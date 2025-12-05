@@ -356,4 +356,7 @@ footer p { margin-top: 10px; }
     .nav-links li { margin: 15px 0; }
     .nav-links.nav-active { transform: translateX(0%); }
     .hamburger { display: block; }
+    .about-text h2 {
+       display: flex; justify-content: center
+    }
 }
