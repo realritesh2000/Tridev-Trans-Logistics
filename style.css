@@ -163,10 +163,12 @@ img { max-width: 100%; display: block; }
     align-items: center;
 }
 
+ 
 .about-text h2 { 
     font-size: 2rem; 
     margin-bottom: 20px; 
     color: var(--primary-color);
+     display: flex; justify-content: center
 }
 
 .about-text p { 
@@ -356,6 +358,8 @@ footer p { margin-top: 10px; }
     .nav-links li { margin: 15px 0; }
     .nav-links.nav-active { transform: translateX(0%); }
     .hamburger { display: block; }
+    
+    .hero p {padding-left: 30px; padding-right: 30px;}
     .about-text h2 {
        display: flex; justify-content: center
     }
